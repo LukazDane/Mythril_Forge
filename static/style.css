@@ -1,0 +1,90 @@
+body {
+  width: 100%;
+  background-color: #212121;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+nav {
+  background-color: #212121;
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("https://images.unsplash.com/photo-1558894656-140be04af105?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1164&q=80")
+      black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  /* display: none; Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.hero-background-img {
+  background-image: url("/assets/julian-schultz.jpg");
+  background-position-x: -47vw;
+  background-position-y: center;
+}
+#cta {
+  align-self: center;
+}
+
+footer {
+  background-color: aliceblue;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
